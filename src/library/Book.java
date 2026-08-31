@@ -27,8 +27,13 @@ public class Book {
 
 	}
 	
-	public void aplliesDiscount(double porcentage) {
+	public boolean aplliesDiscount(double porcentage) {
+		
+		if(porcentage > 0.3){
+			return false;
+		}
 		this.price -= this.price * porcentage;
+		return true;
 	}
 		
 	boolean hasAuthor() {
