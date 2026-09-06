@@ -8,8 +8,8 @@ public class Book {
 	private String id;
 	private Author author;
 	
-	public Book() {
-		System.out.println("A new book has benn created! ");
+	public Book(Author author) {
+		this.author = author;
 	}
 
 	public double getPrice() {
