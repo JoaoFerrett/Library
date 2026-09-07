@@ -1,6 +1,6 @@
 package library;
 
-public class Book {
+public abstract class Book {
 	
 	private double price;
 	private String title;
