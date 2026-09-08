@@ -70,12 +70,7 @@ public abstract class Book {
 	
 	
 	public boolean aplliesDiscount(double porcentage) {
-		
-		if(porcentage > 0.3){
-			return false;
-		}
-		this.price -= this.price * porcentage;
-		return true;
+		return false;
 	}
 		
 	boolean hasAuthor() {
