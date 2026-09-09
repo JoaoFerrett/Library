@@ -1,6 +1,6 @@
 package library;
 
-public class PrintedBook extends Book {
+public class PrintedBook extends Book implements Promotional {
 	
 	public PrintedBook(Author author) {
 		super(author);
@@ -11,7 +11,7 @@ public class PrintedBook extends Book {
 	}
 
 	@Override
-	public boolean aplliesDiscount(double porcentage){
+	public boolean appliesDiscount(double porcentage){
 		if(porcentage > 0.3){
 			return false;
 		}

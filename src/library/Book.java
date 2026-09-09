@@ -1,6 +1,6 @@
 package library;
 
-public abstract class Book {
+public abstract class Book implements Product {
 	
 	private double price;
 	private String title;
@@ -68,11 +68,7 @@ public abstract class Book {
 
 	}
 	
-	
-	public boolean aplliesDiscount(double porcentage) {
-		return false;
-	}
-		
+			
 	boolean hasAuthor() {
 		return this.author != null;
 	}

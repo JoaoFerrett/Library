@@ -1,6 +1,6 @@
 package library;
 
-public class Ebook extends Book{
+public class Ebook extends Book implements Promotional{
 	
 	private String waterMark;
 	
@@ -17,7 +17,7 @@ public class Ebook extends Book{
 	}
 	
 	@Override
-	public boolean aplliesDiscount(double porcentage) {
+	public boolean appliesDiscount(double porcentage) {
 		
 		if(porcentage > 0.15) {
 			return false;	
