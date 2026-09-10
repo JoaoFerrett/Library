@@ -1,5 +1,8 @@
 package library;
 
+import library.products.Product;
+import library.bookstore.*;
+
 public abstract class Book implements Product {
 	
 	private double price;
@@ -53,7 +56,7 @@ public abstract class Book implements Product {
 	}
 
 
-	void showDetails() {
+	public void showDetails() {
 		
 		System.out.println("Showing book details: ");
 		System.out.println("Book Title: " + title);

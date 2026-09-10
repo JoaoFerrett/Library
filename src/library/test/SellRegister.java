@@ -1,4 +1,9 @@
-package library;
+package library.products.test;
+
+import library.Ebook;
+import library.PrintedBook;
+import library.ShoppingCart;
+import library.bookstore.Author;
 
 public class SellRegister {
 	

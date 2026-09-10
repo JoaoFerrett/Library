@@ -1,4 +1,4 @@
-package library;
+package library.bookstore;
 
 public class Author {
 	
@@ -39,7 +39,7 @@ public class Author {
 		this.placeOfBirth = placeOfBirth;
 	}
 	
-	void showDetails() {
+	public void showDetails() {
 		
 		System.out.println("Author's name: " + name);
 		System.out.println("Was born in: " + placeOfBirth);

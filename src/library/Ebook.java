@@ -1,5 +1,8 @@
 package library;
 
+import library.products.Promotional;
+import library.bookstore.*;;
+
 public class Ebook extends Book implements Promotional{
 	
 	private String waterMark;
