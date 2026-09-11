@@ -1,4 +1,4 @@
-package library.products.test;
+package library.test;
 
 import library.Ebook;
 import library.PrintedBook;
@@ -43,8 +43,8 @@ public class SellRegister {
 		
 		ShoppingCart cart = new ShoppingCart();
 		
-		cart.addBook(printedBook1);
-		cart.addBook(ebook1);
+		cart.addProduct(printedBook1);
+		cart.addProduct(ebook1);
 	
 		System.out.println("Total " + cart.getTotal());
 	}
