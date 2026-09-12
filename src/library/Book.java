@@ -2,6 +2,7 @@ package library;
 
 import library.products.Product;
 import library.bookstore.*;
+import library.exception.*;;
 
 public abstract class Book implements Product {
 	
@@ -12,6 +13,9 @@ public abstract class Book implements Product {
 	private Author author;
 	
 	public Book(Author author) {
+		if(author == null){
+			throw new NullAuthorException("You can't create a book with NULL Author");
+		}
 		this.author = author;
 	}
 
