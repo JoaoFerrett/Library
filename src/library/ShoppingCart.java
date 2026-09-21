@@ -1,30 +1,29 @@
 package library;
 
+import java.util.ArrayList;
+import java.util.concurrent.ArrayBlockingQueue;
+
 import library.products.Product;
 
 public class ShoppingCart {
 	
 	private double total;
-	private Product[] products = new Product[10];
-	//private int counter = 0; for now has no use
+	private ArrayList<Product> products;
 	
-	public void addProduct(Product product1) {
+	public ShoppingCart(){
+		this.products = new ArrayList<>();
+	}
 
-		System.out.println("Adding to your cart");
+	public void addProduct(Product product) {
+		this.products.add(product);
+	}
 
-		for(int i = 0; i < products.length; i++){
-			try{
-				Product product = products[i];
-				if(product != null){
-					System.out.println("+ $:" + product.getPrice());
-				}
-					this.total += products[i].getPrice();
+	public void removeProduct(Product product){
+		this.products.remove(product);
+	}
 
-			}catch(ArrayIndexOutOfBoundsException e){
-				System.out.println("Array Index blablabla");
-			}
-			
-		}
+	public ArrayList<Product> geProducts(){
+		return products;
 	}
 	
 	public double getTotal() {

@@ -1,5 +1,8 @@
 package library;
 
+import library.bookstore.Author;
+import library.products.Promotional;
+
 public class PrintedBook extends Book implements Promotional {
 	
 	public PrintedBook(Author author) {

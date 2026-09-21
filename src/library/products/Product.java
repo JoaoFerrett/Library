@@ -1,7 +1,7 @@
-package library;
+package library.products;
 
-@FunctionalInterface 
-public interface Product {
+
+public interface Product extends Comparable<Product>{
 
     double getPrice();
     

@@ -80,5 +80,18 @@ public abstract class Book implements Product {
 		return this.author != null;
 	}
 	
-	
+
+	  @Override
+        public int compareTo(Product other){
+            
+            if(this.getPrice() < other.getPrice()){
+                return -1;
+            }
+            if(this.getPrice() < other.getPrice()){
+                return 1;
+            }
+
+            return 0;
+        }
 }
+	
